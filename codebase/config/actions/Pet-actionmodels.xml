@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+<actionmodels>
+    <model name="petDetails">
+        <action name="primaryAttributes" type="object"/>
+        <action name="attachments" type="object"/>
+</model>
+<!-- Seting pets list view  create delete -->
+<model name="pets list">
+    <action name="create" type="pet" shortcut="true"/>
+    <action name="delete" type="object" shortcut="true"/>
+</model>
+<!-- Seting pets  editPet action  -->
+<model name="pet actions" menufor="com.acme.Pet">
+    <action name="editPet" type="pet"/>
+</model>
+
+<!-- 投产单创建 -->
+ <model name="">
+    <action name="ProductionCreate" type="pet" shortcut="true"/>  
+ </model>
+</actionmodels>

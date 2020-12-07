@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configuration
+  SYSTEM "xconf.dtd">
+<Configuration>
+
+	 <!--Updated by workerflow shezhi canyuzhe-->
+   <Property name="wt.services.service.800000"  overridable="true"   
+       targetFile="codebase/wt.properties" 
+       value="com.corilead.workflow.participants.WorkflowService/com.corilead.workflow.participants.StandardWorkflowService"/>
+       <Service context="default" name="com.ptc.core.components.descriptor.DataUtility" targetFile="codebase/service.properties">
+           <Option cardinality="duplicate" order="0" overridable="true" requestor="java.lang.Object"
+               selector="roleMemberOnSetupParticipants" serviceClass="com.corilead.workflow.datautility.SetupParticipantsDataUtility"/>
+      </Service>
+      <!-- Seting fo pet-->
+   <ConfigurationRef xlink:href="utilities/wca/conf/windchill/windchillconfigurator.xconf"/>
+      <AddToProperty name="com.ptc.netmarkets.util.misc.defaultActionmodels" value="config/actions/Pet-actionmodels.xml"/>
+       <AddToProperty name="com.ptc.netmarkets.util.misc.defaultActions" value="config/actions/Pet-actions.xml"/>
+       <Service context="default" name="wt.verification.Verifier" targetFile="codebase/service.properties">
+            <Option cardinality="duplicate" order="1" requestor="com.acme.Pet" serviceClass="com.acme.PetVerifier" selector="DEFAULT"/>
+      </Service>
+      <!-- Setting for the confinguration about Production Single-->
+      <AddToProperty   name= "com.ptc.netmarkets.util.misc.defaultActionmodels"  value="config/actions/Petactionmodels.xml"/>.
+    <!-- 在对象初始化显示 -->
+        <Property name="ext.corilead.prod.single.ProductionSingle" overridable="true"  targetFile="codebase/com/ptc/core/rule/server/delegate/init/RuleConfigurableTypeAttribute.properties"
+             value="number,name,lifeCycle,lifeCycle.id,teamTemplate,teamTemplate.id,folder.id,organization.id"/>
+   <AddToProperty name="PDMLink.allSearch" value="ext.corilead.prod.single.ProductionSingle"/>
+   <AddToProperty name="Foundation.ObjectInitRules" value="ext.corilead.prod.single.ProductionSingle"/>
+</Configuration>

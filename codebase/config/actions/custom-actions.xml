@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+    <objecttype name="testType" class="" resourceBundle="ext.corilead.resource.ActionLableResourceRB">
+		<action name="testName"/>
+	</objecttype>
+	<objecttype name="testName" class="" resourceBundle="ext.corilead.resource.ActionLableResourceRB">
+		<action name="subtest1">
+				<command url="/ptc1/comp/acme.pet.table" windowType="page"/>
+		</action>
+		<action name="subtest2">
+			<command url="netmarkets/jsp/test/a.jsp"/>
+		</action>
+	</objecttype>
+	<!-- set participant shezhicanyuzhe configuration-->
+	    <objecttype  name="work"  class="wt.workflow.work.WorkItem" resourceBundle="com.corilead.participator.ParticipatorRB">
+				<action name="addUsersToRole" ajax="component">
+					<command url="netmarkets/jsp/com/corilead/participators/setupParticipants.jsp"  windowType="popup"/>
+				</action>
+	</objecttype>
+
+	<!-- set BaseLineManaged  tijiaoshenhe jiedongshenqing  configuration-->
+	  <objecttype name="object" class=""  resourceBundle="ext.corilead.resource.abcprod.ActionLableResourceRB">
+		<action  ajax="page" name="submitReview">
+			<command class="ext.corilead.workPackage.SubmitUtil" method="doSetState"
+					 onClick="JCAConfirm(event,'ext.corilead.resource.abcprod.ActionLableResourceRB.CONFORM_SUBMIT_REVIEW')"/>
+		</action>
+		  <action ajax="page" name="applyTraw">
+			  <command class="ext.corilead.workPackage.TrawUtil" method="doSetState"
+					   onClick="JCAConfirm(event,'ext.corilead.resource.abcprod.ActionLableResourceRB.CONFORM_APPLY_THAW')"/>
+		  </action>
+	</objecttype>
+
+	<!-- set for production singer in  action  -->
+	<objecttype name="PutIntoOperation" class="" resourceBundle="ext.corilead.resource.abcprod.ProductionAction">
+		<action name="create">
+			<command url="netmarkets/jsp/prod/single/ProductionCreate.jsp" windowType="page"/>
+		</action>
+	</objecttype>
+	
+    <include href="config/actions/Pet-actions.xml"/>
+</listofactions>

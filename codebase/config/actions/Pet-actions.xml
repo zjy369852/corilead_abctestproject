@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM 'actions.dtd'>
+<listofactions>
+
+    <!-- Seting for the pet  show page-->
+    <objecttype name="pet" class="com.acme.Pet" resourceBundle="com.acme.jca.acmeActionResource">
+        <action name="petDefineItemAttributesWizStep" afterVK="setAttributesWizStep" preloadWizardPage="true" required="true">
+            <command url="netmarkets/jsp/acme/pet/defineItemAttributesWizStep.jsp" windowType="wizard_step"/>
+        </action>
+        <!-- Seting for the page of the create pet-->
+        <action name="create">
+            <command class="com.ptc.core.components.forms.CreateObjectFormProcessor" url="netmarkets/jsp/acme/pet/create.jsp" windowType="popup"/>
+        </action>
+          <!-- Seting for the page of the edit pet-->
+        <action name="editPet">
+            <command class="com.ptc.core.components.forms.DefaultEditFormProcessor" url="netmarkets/jsp/acme/pet/editPet.jsp" windowType="popup"/>
+        </action>
+    </objecttype>
+
+    <!-- set for production single show view page  -->
+    <objecttype name="ProductionSingle"  class="ext.corilead.prod.single.ProductionSingle"  resourceBundle="ext.corilead.resource.abcprod.ProductionAction">
+        <action name="petDefineItemAttributesWizStep" afterVK="setAttributesWizStep" preloadWizardPage="true" required="true">
+            <command url="netmarkets/jsp/prod/single/productionAttributes.jsp" windowType="wizard_step"/>
+        </action>
+        <!--  set for production single  for create  -->
+        <action name="ProductionCreate">
+            <command class="com.ptc.core.components.forms.CreateObjectFormProcessor"  url="netmarkets/jsp/prod/single/ProductionCreate.jsp" windowType="popup"/>
+        </action>
+            <!--  set for production single  for edit  -->
+        <action name="eidtprodyction">
+            <command class="com.ptc.core.components.forms.DefaultEditFormProcessor" url="netmarkets/jsp/prod/single/eidtprodyction.jsp" windowType="popup"/>
+        </action>
+    </objecttype>
+</listofactions>

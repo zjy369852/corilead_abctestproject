@@ -1,0 +1,39 @@
+ResourceInfo.class=wt.tools.resource.StringResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.UUID=4f63d6f1-b2db-4bdf-84d1-cc54675dd1b9
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+
+# Entry Contents
+
+object.submitReview.title.value=提交审阅（打包）
+object.submitReview.description.value=提交审阅（打包）
+object.submitReview.tooltip.value=提交审阅（打包）
+object.submitReview.moreurlinfo.value=height=200,width=300
+
+object.submitDocumentReview.title.value=提交审阅（单个文档）
+object.submitDocumentReview.description.value=提交审阅（单个文档）
+object.submitDocumentReview.tooltip.value=提交审阅（单个文档）
+object.submitDocumentReview.moreurlinfo.value=height=200,width=300
+
+object.applyTraw.title.value=解冻申请
+object.applyTraw.description.value=解冻申请
+object.applyTraw.tooltip.value=解冻申请
+object.applyTraw.moreurlinfo.value=height=200,width=300
+
+object.submit_step.title.value=提交审阅
+object.submit_step.description.value=提交审阅
+object.submit_step.tooltip.value=提交审阅
+
+1.value=你确认将该对象提交审阅流程吗？
+1.constant=CONFORM_SUBMIT_REVIEW
+
+2.value=您确定将本对象申请解冻流程吗？
+2.constant=CONFORM_APPLY_THAW

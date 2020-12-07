@@ -1,0 +1,10 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+
+jx.value=基线
+jx.order=10
+pcjx.value=批次基线
+pcjx.order=20
+shiyan.value=实验基线
+shiyan.order=30
+chanpin.value=产品基线
+chanpin.order=40

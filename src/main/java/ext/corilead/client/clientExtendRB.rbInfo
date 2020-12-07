@@ -1,0 +1,39 @@
+ResourceInfo.class=wt.tools.resource.StringResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.UUID=4f63d6f1-b2db-4bdf-84d1-cc54675dd1b9
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+
+# Entry Contents
+
+object.submitReview.title.value=Submit Review(package)
+object.submitReview.description.value=Submit the Object to Review(package)
+object.submitReview.tooltip.value=Submit the Object to Review(package)
+object.submitReview.moreurlinfo.value=height=200,width=300
+
+object.submitDocumentReview.title.value=Submit Review(single document)
+object.submitDocumentReview.description.value=Submit the Object to Review(single document)
+object.submitDocumentReview.tooltip.value=Submit the Object to Review(single document)
+object.submitDocumentReview.moreurlinfo.value=height=200,width=300
+
+object.applyTraw.title.value=Apply for thawing
+object.applyTraw.description.value=Apply for thawing
+object.applyTraw.tooltip.value=Apply for thawing
+object.applyTraw.moreurlinfo.value=height=200,width=300
+
+object.submit_step.title.value=Submit Review
+object.submit_step.description.value=Submit Review
+object.submit_step.tooltip.value=Submit Review
+
+1.value=Do you confirm submit the part to review?
+1.constant=CONFORM_SUBMIT_REVIEW
+
+2.value=Are you sure to unfreeze this object's Application?
+2.constant=CONFORM_APPLY_THAW

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/actions_actionmodels/java/SetUpReview.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/actions_actionmodels/java/SetUpReview_zh_CN.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/createP/productLibrary.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ptc/windchill/enterprise/change2/changeManagementActionsRB_zh_CN.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/prod/single/mvc/builders/ProdcutionSingleDataBuilder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/prod/single/mvc/builders/ProductionSingleInfoAttributesBuilder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/prod/single/mvc/builders/ProductionSingleSetAttibutes.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/prod/single/mvc/builders/WorkflowInfoRB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/resource/abcprod/ActionLableResourceRB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/resource/abcprod/ActionLableResourceRB_zh_CN.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/resource/abcprod/ProductionAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ext/corilead/resource/abcprod/ProductionAction_zh_CN.java" charset="GBK" />
+  </component>
+</project>
