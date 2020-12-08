@@ -218,6 +218,27 @@
         <action name="ProductionCreate" type="ProductionSingle"  />
     </model>
 
+    <!-- Baseline Objects Table - Toolbar Actions -->
+    <model name="baseline member table">
+        <action name="addMembers" type="baseline" shortcut="true"/>
+        <action name="collectItems" type="object" shortcut="true"/>
+        <action name="removeMembers" type="baseline" shortcut="true"/>
+        <action name="separator" type="separator" shortcut="true"/>
+        <action name="list_copy" type="object" shortcut="true"/>
+        <action name="pasteMembers" type="baseline" shortcut="true"/>
+        <action name="separator" type="separator"/>
+        <action name="WFADDTOWORKSPACE" type="folder"/>
+        <action name="PAGERELOADINGMULTICHECKOUT" type="folder"/>
+        <action name="separator" type="separator"/>
+        <action name="unlockFederatedObject" type="baseline"/>
+        <action name="separator" type="separator"/>
+        <action name="track_new_work_table" type="resourceAssignment" /><!-- Track new Work against subject -->
+        <action name="new_plan_activity_table" type="planActivity" /><!-- New Plan Activity against subject -->
+        <!--添加导出 export -->
+        <action   name="export"      type="object" />                                                 <!-- Export -->
+        <action   name="cadmultiexport" type="object" />
+
+    </model>
 
 
 </actionmodels>
