@@ -2,8 +2,13 @@ package com.actions_actionmodels.java;
 import wt.util.resource.RBEntry;
 import wt.util.resource.RBUUID;
 import wt.util.resource.WTListResourceBundle;
-
 @RBUUID("com.actions_actionmodels.java.SetUpReview")
+/**
+    *   @param null 
+    * @return 
+    * @author ZhangJieYu
+    * @date 2020/12/8 15:21
+*/
 public final class SetUpReview extends WTListResourceBundle {
     @RBEntry("部件提交审核")
     public static final String t1_CREATE_TITLE = "WTPart1.setReview.title";
