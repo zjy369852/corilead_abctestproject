@@ -60,15 +60,16 @@ public class productLibrary {
                     System.out.println("用户认证失败,请登陆系统后再使用！");
                     return null;
                 }
-                WTOrganization wtorganization = curUser.getOrganization();
                 //根据用户得 到组织；
+                WTOrganization wtorganization = curUser.getOrganization();
                 String strContainerTemplate = "常规产品";
                 //给定默认的模版
                 pdmlinkProduct.setName(strName);
                 WTContainerRef containerRef = null;
                 //容器
                 if (wtorganization != null) {
-                    containerRef = WTContainerHelper.service.getOrgContainerRef(wtorganization);               						pdmlinkProduct.setContainerReference(containerRef);
+                    containerRef = WTContainerHelper.service.getOrgContainerRef(wtorganization);
+                    pdmlinkProduct.setContainerReference(containerRef);
                     pdmlinkProduct.setOrganization(wtorganization);
                 }
                 if (strContainerTemplate != null && strContainerTemplate.trim().length() > 0) {
