@@ -32,8 +32,8 @@
 	</objecttype>
 
 	<!-- set for production singer in  action  -->
-	<objecttype name="PutIntoOperation" class="" resourceBundle="ext.corilead.resource.abcprod.ProductionAction">
-		<action name="create">
+	<objecttype name="PutIntoOperation" class="" resourceBundle="ext.corilead.resource.abcprod.ProductionAction" required="true">
+		<action name="create"  ajax="row">
 			<command url="netmarkets/jsp/prod/single/ProductionCreate.jsp" windowType="page"/>
 		</action>
 	</objecttype>
